@@ -14,8 +14,8 @@ services:
   app:
     build: .
     restart: unless-stopped
-    ports:
-      - "3030:3000"
+    expose:
+      - "3000"
     environment:
       CONNECTIONSTRING: mongodb://mongo:27017/agenda
     depends_on:
