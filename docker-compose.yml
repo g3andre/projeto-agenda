@@ -15,7 +15,7 @@ services:
     build: .
     restart: unless-stopped
     expose:
-      - "3000"
+      - "3030"
     environment:
       CONNECTIONSTRING: mongodb://mongo:27017/agenda
     depends_on:
