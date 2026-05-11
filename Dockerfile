@@ -28,6 +28,6 @@ RUN chown -R node:node /app
 
 USER node
 
-EXPOSE 3000
+EXPOSE 3030
 
 CMD ["node", "server.js"]
